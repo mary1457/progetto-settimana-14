@@ -53,8 +53,8 @@ public class Collezione {
 
     }
 
-    public void rimuoviGioco(Gioco gioco) throws Exception {
-        boolean rimozione = giochi.removeIf(gio -> gio.getIdGioco() == gioco.getIdGioco());
+    public void rimuoviGioco(int IdGioco) throws Exception {
+        boolean rimozione = giochi.removeIf(gio -> gio.getIdGioco() == IdGioco);
         if (rimozione) {
             System.out.println("Il gioco è stato rimosso");
         } else {
